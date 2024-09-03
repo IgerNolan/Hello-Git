@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星海回声—登录</title>
+
+    <script type="text/javascript" src="js/login.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+    <link rel="stylesheet" href="css/style.index.css">
+    <link rel="stylesheet" href="css/style.login.css">
+
+    <!-- 字体 -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Josefin+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
+    <nav id="header-navbar" class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#top">
+                <span class="lnr lnr-rocket"></span>
+                <p class="left-aligned">
+                    <h3><b><span style="color: orangered;">星海回声—登录</span></b></h3>
+                </p>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header"
+                aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="lnr lnr-menu"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-nav-header">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/index.html">首页</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="triangle-up-left"></div>
+            <div class="triangle-up-right"></div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <form action="https://starryecho.com">
+                <tr>
+                    <td>
+                        <h3><b>欢迎回来</b></h3>
+                    </td>
+                </tr>
+                <tr>
+                    <br>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="color: red;">*</span>账号：
+                    </td>
+                    <td>
+                        <input id="user" type="text" class="inputs" onchange="checkuser()" />
+                        <div id="userId" class="red" style="color: red;"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <br>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="color: red;">*</span>密码：
+                    </td>
+                    <td>
+                        <input id="pwd" type="password" class="inputs" onchange="checkPwd()" />
+                        <div id="pwdId" class="red" style="color: red;"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <br>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="sub" value="登录" onchange="check()" />
+                        <input type="reset" name="cancel" value="清除" />
+                    </td>
+                </tr>
+            </form>
+            <p>没有账号？点此处<a href="html/register.html">注册</a></p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
